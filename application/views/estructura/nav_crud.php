@@ -9,7 +9,7 @@
 				<span class="icon icon-bar"></span>
 			</button>
 
-			<a href="<?=base_url()?>home2" ><img src="<?=base_url()?>public/images/logo.jpg" ></a>
+			<a href="<?=base_url()?>usuario" ><img src="<?=base_url()?>public/images/logo.jpg" ></a>
 		</div>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">

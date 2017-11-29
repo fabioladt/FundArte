@@ -71,6 +71,10 @@
 <script > $(document).ready(function(){
     $('#tabla_solar').DataTable();});
 </script>
+
+<script > $(document).ready(function(){
+    $('#tabla_eventos').DataTable();});
+</script>
 </body>
 
 <!-- Mirrored from omqweb.neocities.org/BuscandoEmpleo.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Apr 2017 01:21:45 GMT -->
