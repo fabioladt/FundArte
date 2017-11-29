@@ -1,0 +1,30 @@
+h1 {
+	color:white;
+	text-align:center;
+	font-family:Aharoni;
+	font-size:85px;
+	background-image: url('../img/arte.jpg');
+	margin-top: 0px;
+}
+
+.container_donaciones {
+	background-image: url('../img/azul.jpg');
+}
+
+#text_1 {
+	color:white;
+	text-align:center;
+	font-family:Freestyle Script;
+	font-size:50px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+#text_2 {
+	background-image: url('../img/abstracto.jpg');
+	font-size:20px;
+	height:200px;
+	margin-top:0px;
+	margin-bottom:0px;
+	width:0 auto;
+}

@@ -1,4 +1,3 @@
-
 <!-- footer section -->
 <footer>
 	<div class="container">
@@ -75,4 +74,6 @@
 </body>
 
 <!-- Mirrored from omqweb.neocities.org/BuscandoEmpleo.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Apr 2017 01:21:45 GMT -->
+</html>
+</body>
 </html>
