@@ -153,7 +153,9 @@ img:hover {
 .navbar-default .navbar-toggle:focus {
   background-color: transparent
 }
-
+#login {
+  padding-top: 100px;
+}
 #evento {
   padding-top: 50px;
 }
@@ -173,7 +175,6 @@ img:hover {
   background-position: center;
   min-height: 600px;
   padding-top: 180px;
-  padding-left: 150px;
   padding-bottom: 100px;
 }
 #home2 h2 {

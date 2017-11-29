@@ -9,14 +9,16 @@ class Usuario extends CI_Controller{
   }
 
     public function index(){
-    //  $data['contenido'] = "usuario/index";
-      //$data['usuarios'] = $this->Usuario_model->cargarUsuario();
-      //$data = array('usuarios' => $result);
-      //$this->load->view("usuario/index", $data);
-      $this->load->view('usuario/head_usuario');
+
+      $data = array('titulo' => 'FundArte');
+      $this->load->view("estructura/head", $data);
+      $this->load->view("estructura/nav_crud");
+      $this->load->view("home/index_crud");
+      $this->load->view("estructura/footer");
+      /*$this->load->view('usuario/head_usuario');
       $result = $this->Usuario_model->getUsuarios();
 		  $data = array('cargar' => $result);
-		  $this->load->view("usuario/index", $data);
+		  $this->load->view("usuario/index", $data);*/
     }
 
     public function registro(){

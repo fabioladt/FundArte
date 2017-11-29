@@ -41,8 +41,11 @@ class Auth extends CI_Controller {
         redirect("auth/login", "refresh");
       }
     }
-
+    $data = array('titulo' => 'Login');
+    $this->load->view("estructura/head", $data);
+    $this->load->view("estructura/nav_publico");
     $this->load->view('login');
+    $this->load->view("estructura/footer");
   }
 
   public function logout(){

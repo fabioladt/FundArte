@@ -19,7 +19,7 @@
                 <li><a href="#nosotros" class="smoothScroll"><b>Aprendizajes</b></a></li>
                 <li><a href="#empresa" class="smoothScroll"><b>Voluntariado</b></a></li>
                 <li><a href="#aspirante" class="smoothScroll"><b>Donaciones</b></a></li>
-                <li><a href="#aspirante" class="smoothScroll"><b>Login</b></a></li>
+                <li><a href="<?=base_url()?>auth/Login" class="smoothScroll"><b>Login</b></a></li>
 			</ul>
 		</div>
 	</div>
