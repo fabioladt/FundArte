@@ -16,8 +16,10 @@ class Home2 extends CI_Controller
 
 		$data = array('titulo' => 'FundArte');
 		$this->load->view("estructura/head", $data);
+		$this->load->view("estructura/nav_crud");
 		$this->load->view("home/index_crud");
-
+		$this->load->view("estructura/footer");
+		
 	}
 
 }
