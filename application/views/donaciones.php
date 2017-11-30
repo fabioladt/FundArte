@@ -1,4 +1,4 @@
-body>
+<body>
 
 	<div id="titulo">
 		<h1 class="text-center">Donaciones</h1>
