@@ -16,7 +16,7 @@
                 <li><a href="<?=base_url()?>evento/inicio" class="smoothScroll"><b>Solar</b></a></li>
                 <li><a href="" class="smoothScroll"><b>Cafeto</b></a></li>
                 <li><a href="" class="smoothScroll"><b>Aprendizajes</b></a></li>
-                <li><a href="" class="smoothScroll"><b>Voluntariado</b></a></li>
+                <li><a href="<?=base_url()?>voluntariado/inicio" class="smoothScroll"><b>Voluntariado</b></a></li>
                 <li><a href="<?=base_url()?>usuario/inicio" class="smoothScroll"><b>Usuarios</b></a></li>
                 <li><a href="<?=base_url()?>" class="smoothScroll"><b>Log Out</b></a></li>
 			</ul>
