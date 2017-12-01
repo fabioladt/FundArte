@@ -19,7 +19,7 @@ class Aprendizaje extends CI_Controller
 		$this->load->view("estructura/nav_publico");
 		
 
-		$result = $this->db->get('clase');
+		$result = $this->db->get('clase_vista');
 		$datos = array('clases'=> $result);
 
 		$this->load->view("eventos/aprendizaje", $datos);

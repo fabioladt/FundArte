@@ -25,7 +25,7 @@
 							<td><?= $clase->fecha_inicio ?></td>
 							<td><?= $clase->fecha_fin ?></td>
 							<td><a href="<?=base_url()?>$fila->imagen?>"><button type="button" class="btn btn-xs btn-primary">VER</button></a></td>
-							<td><?= $clase->tipo ?></td>
+							<td><?= $clase->tipon?></td>
 						</tr>
 						<?php		
 						}
