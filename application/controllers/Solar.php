@@ -11,6 +11,7 @@ class Solar extends CI_Controller
 
 	}
 
+//Tabla Evento
 	public function index()
 	{
 		$data = array('titulo' => 'Solar');
@@ -18,7 +19,7 @@ class Solar extends CI_Controller
 		$this->load->view("estructura/nav_publico");
 		$result = $this->Model_Solar->getSolar();
 		$data = array('solar' => $result);
-		$this->load->view("eventos/solar", $data);
+		$this->load->view("eventos/solar", $data); //index 
 		$this->load->view("estructura/footer");
 	}
 

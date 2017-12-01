@@ -13,7 +13,7 @@
 		</div>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
-                <li><a href="" class="smoothScroll"><b>Solar</b></a></li>
+                <li><a href="<?=base_url()?>evento/inicio" class="smoothScroll"><b>Solar</b></a></li>
                 <li><a href="" class="smoothScroll"><b>Cafeto</b></a></li>
                 <li><a href="" class="smoothScroll"><b>Aprendizajes</b></a></li>
                 <li><a href="" class="smoothScroll"><b>Voluntariado</b></a></li>
