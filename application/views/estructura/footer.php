@@ -77,6 +77,14 @@
 </script>
 
 <script > $(document).ready(function(){
+    $('#tabla_exposiciones').DataTable();});
+</script>
+
+<script > $(document).ready(function(){
+    $('#tabla_usuarios').DataTable();});
+</script>
+
+<script > $(document).ready(function(){
     $('#tabla_clases').DataTable();});
 </script>
 
