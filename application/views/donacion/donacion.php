@@ -7,13 +7,18 @@
 				<hr>
 				<br>
 				<div class="col-md-6 col-sm-6">
+				<p style="text-align: justify;">Transformar la vida cultural de la población de un municipio es un reto que no podemos hacerlo solos. 
+				<br>
+				Escoge tu proyecto y sé parte de la transformación cultural de Cojutepeque a través de las expresiones artísticas en comunidad.
+				</p>
 					<ul>
-						<li>A través de nuestra cuenta del Banco Agricola: xxxx-xxxx-xxxx.</li>
-						<li>Sillas, mesas y otro tipo de muebles.</li>
-						<li>Equipo de sonido y computo.</li>
-						<li>Equipo de limpieza.</li>
-						<li>También puedes acercarte a nuestras instalaciones para hacer tus donaciones.</li>
+						<li>Lunas de las artes para estudiantes</li>
+						<p style="text-align: justify;">Desarrollamos diversas jornadas artísticas educativas en El Solar Teatro Cojutepecano con jóvenes de segundo y tercer ciclo de cuatro centros escolares de nuestro municipio: CE Candelario Cuéllar, CE Anita Alvarado, CE Eulogia Rivas y CE Néstor Salamanca. Contribuimos al desarrollo de nuestra niñez y juventud cojutepecana, proporcionando valores de convivencia y reflexión crítica de nuestras realizades a partir de las expresiones artísticas.</p>
+						<li>Azacuanes teatrales (becas para aprendices de teatro)</li>
+						<li>Festivales artísticos cojutepecanos</li>
 					</ul>
+				<p style="text-align: justify;">Envíanos un mensaje y uno de nuestros gestores se comunicarán para hacer efectiva tu donación o aporte. 
+				</p>
       			</div>
       			<div class="col-md-6 col-sm-6">
 					<a href="<?=base_url()?>Donacion"><img src="<?=base_url()?>public/images/donacion.jpg" class="img-responsive" alt="about img"></a>
