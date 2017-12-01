@@ -30,7 +30,7 @@
       </div>
 
       <div class="form-group">
-        <label for="usuario" >Datalle: </label>
+        <label for="usuario" >Detalle: </label>
         <input name="imagen" id="imagen" type="file" value="<?php echo $eve->imagen; ?>">
       </div>
 

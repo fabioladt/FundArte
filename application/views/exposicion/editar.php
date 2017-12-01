@@ -26,11 +26,11 @@
 
       <div class="form-group">
         <label for="contraseña" >Fecha de Fin: </label>
-        <input class="form-control" name="fecha_f" id="fecha_f" type="date" value="<?php echo $exp->fecha_fin ?>">
+        <input class="form-control" name="fecha_f" id="fecha_f" type="date" value="<?php echo $exp->fecha_fin; ?>">
       </div>
 
       <div class="form-group">
-        <label for="usuario" >Datalle: </label>
+        <label for="usuario" >Detalle: </label>
         <input name="imagen" id="imagen" type="file" value="<?php echo $exp->imagen; ?>">
       </div>
 
@@ -40,9 +40,5 @@
     </form>
     </div>
 </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="<?php echo base_url(); ?>public/js/bootstrap.min.js"></script>
   </body>
 </html>

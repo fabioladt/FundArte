@@ -8,6 +8,7 @@ class Usuario extends CI_Controller{
     $this->load->model('Usuario_model');
   }
 
+//pagina de bienvenida
     public function index(){
 
       $data = array('titulo' => 'FundArte');
@@ -15,12 +16,9 @@ class Usuario extends CI_Controller{
       $this->load->view("estructura/nav_crud");
       $this->load->view("home/index_crud");
       $this->load->view("estructura/footer");
-      /*$this->load->view('usuario/head_usuario');
-      $result = $this->Usuario_model->getUsuarios();
-		  $data = array('cargar' => $result);
-		  $this->load->view("usuario/index", $data);*/
     }
 
+//inicio -> index Usuarios
     public function inicio(){
 
       $data = array('titulo' => 'FundArte');
@@ -35,16 +33,9 @@ class Usuario extends CI_Controller{
       //$this->load->view("home/index_crud");
       $this->load->view("estructura/footer");
 
-      /*$this->load->view('usuario/head_usuario');
-      $result = $this->Usuario_model->getUsuarios();
-		  $data = array('cargar' => $result);
-		  $this->load->view("usuario/index", $data);*/
     }
 
-    public function registro(){
-      $this->load->view("usuario/register");
-    }
-
+//Edicion de Usuarios
     public function editar($id)
     {
       $data = array('titulo' => 'FundArte');
@@ -97,6 +88,7 @@ class Usuario extends CI_Controller{
       $this->load->view("estructura/footer");
     }
 
+//Eliminacion de Usuarios
     public function eliminar($id = NULL)
     {
       if($id != NULL)

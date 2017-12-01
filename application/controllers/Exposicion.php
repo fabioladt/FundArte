@@ -8,7 +8,7 @@ class Exposicion extends CI_Controller{
     $this->load->model('Model_Exposiciones');
   }
 
-
+//Pantalla de Inicio -> Index de Usuarios
     public function inicio(){
 
       $data = array('titulo' => 'FundArte');
@@ -26,7 +26,7 @@ class Exposicion extends CI_Controller{
 
     }
 
-
+//Edicion de Usuarios
     public function editar($id)
     {
       $data = array('titulo' => 'FundArte');

@@ -1,10 +1,10 @@
 <body>
 </hr>
 </hr>
-<h3>Registrar Exposicion</h3>
+<h3>Registrar Clase</h3>
 <div >
     <div class="col-lg-5 col-lg-offset-2">
-      <h1 align="center">Registrar Nueva Exposicion</h1>
+      <h1 align="center">Registrar Nueva Clase</h1>
       <?php if(isset($_SESSION['success'])) {?>
         <div class="alert alert-success"><?php echo $_SESSION['success'];?></div>
       <?php } ?>
@@ -12,7 +12,7 @@
       <form action="" method="POST">
 
       <div class="form-group">
-        <label for="usuario" >Nombre de la Exposicion: </label>
+        <label for="usuario" >Nombre de la Clase: </label>
         <input class="form-control" name="nombre" id="nombre" type="text">
       </div>
       <div class="form-group">
@@ -27,6 +27,12 @@
       <div class="form-group">
         <label for="contraseña" >Detalle: </label>
         <input name="imagen" id="imagen" type="file">
+      </div>
+
+      <div class="form-group">
+        <label for="contraseña" >Tipo: </label>
+        <select name="tipo" id="tipo"><option value='1'>Danza</option><option value='2'>Musica</option><option value='3'>Teatro</option><option value='4'>Yoga</option>
+    </select>
       </div>
 
       <div >

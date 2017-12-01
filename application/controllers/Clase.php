@@ -1,14 +1,14 @@
 <?php
 
-class Evento extends CI_Controller{
+class Clase extends CI_Controller{
 
   public function __construct()
   {
     parent::__construct();
-    $this->load->model('Model_Eventos');
+    $this->load->model('Model_Clases');
   }
 
-//pantalla de inicio -> Index de Usuarios
+//Pantalla de inicio -> Index de Usuarios
     public function inicio(){
 
       $data = array('titulo' => 'FundArte');
@@ -16,9 +16,9 @@ class Evento extends CI_Controller{
       $this->load->view("estructura/nav_crud");
 
       //$this->load->view('usuario/head_usuario');
-      $result = $this->Model_Eventos->getEventos();
+      $result = $this->Model_Clases->getClases();
 		  $data = array('cargar' => $result);
-		  $this->load->view("evento/index", $data);
+		  $this->load->view("clase/index", $data);
 
       //$this->load->view("home/index_crud");
       $this->load->view("estructura/footer");
@@ -33,13 +33,13 @@ class Evento extends CI_Controller{
       $this->load->view("estructura/head", $data);
       $this->load->view("estructura/nav_crud");
 
-      $this->load->model('Model_Eventos');
-      $eve = $this->Model_Eventos->editarEvento($id);
+      $this->load->model('Model_Clases');
+      $cla = $this->Model_Clases->editarClase($id);
       //print_r($usu->id);
       //printf($usu->usuario);
       //printf($usu->contraseña);
 
-      $this->load->view("evento/editar", ['eve'=>$eve]);
+      $this->load->view("clase/editar", ['cla'=>$cla]);
       //echo $id;
       $this->load->view("estructura/footer");
     }
@@ -61,6 +61,7 @@ class Evento extends CI_Controller{
         $this->form_validation->set_rules('fecha_i', 'inicio', 'required');
         $this->form_validation->set_rules('fecha_f', 'Final', 'required');
         $this->form_validation->set_rules('imagen', 'Detalle', 'required');
+        $this->form_validation->set_rules('tipo', 'tipo', 'required');
 
         //if form validation true
         if($this->form_validation->run() == TRUE){
@@ -72,14 +73,15 @@ class Evento extends CI_Controller{
           $data3 = $datos['fecha_i'];
           $data4 = $datos['fecha_f'];
           $data5 = $datos['imagen'];
-          $this->Model_Eventos->updateEvento($data1, $data2, $data3, $data4, $data5);
+          $data6 = $datos['tipo'];
+          $this->Model_Clases->updateClase($data1, $data2, $data3, $data4, $data5, $data6);
 
           $this->session->set_flashdata("success", "Tu cuenta ha sido creada. Puedes logearte ahora!!!...");
-          redirect("evento/inicio", "refresh");
+          redirect("clase/inicio", "refresh");
         }
       }
 
-      $this->load->view('evento/inicio');
+      $this->load->view('clase/inicio');
       $this->load->view("estructura/footer");
     }
 //delete
@@ -87,9 +89,9 @@ class Evento extends CI_Controller{
     {
       if($id != NULL)
       {
-        $this->Model_Eventos->eliminarEvento($id);
+        $this->Model_Clases->eliminarClase($id);
       }
-      $this->load->view("evento/registro");
+      $this->load->view("clase/registro");
     }
 
 
@@ -110,21 +112,22 @@ class Evento extends CI_Controller{
       $this->form_validation->set_rules('fecha_i', 'fecha_inicio', 'required');
       $this->form_validation->set_rules('fecha_f', 'fecha_fin', 'required');
       $this->form_validation->set_rules('imagen', 'imagen', 'required');
+      $this->form_validation->set_rules('tipo', 'tipo', 'required');
 
       //if form validation true
       if($this->form_validation->run() == TRUE){
         //echo 'form validated';
 
        //add user in database
-        $data = array('nombre' => $_POST['nombre'], 'fecha_inicio' => $_POST['fecha_i'] , 'fecha_fin' => $_POST['fecha_f'] , 'imagen' => $_POST['imagen'] );
-        $this->db->insert('evento', $data);
+        $data = array('nombre' => $_POST['nombre'], 'fecha_inicio' => $_POST['fecha_i'] , 'fecha_fin' => $_POST['fecha_f'] , 'imagen' => $_POST['imagen'], 'tipo' => $_POST['tipo'] );
+        $this->db->insert('clase', $data);
 
         $this->session->set_flashdata("success", "Tu cuenta ha sido creada. Puedes logearte ahora!!!...");
-        redirect("evento/inicio", "refresh");
+        redirect("clase/inicio", "refresh");
       }
     }
 
-    $this->load->view('evento/registro');
+    $this->load->view('clase/registro');
     $this->load->view("estructura/footer");
     }
 

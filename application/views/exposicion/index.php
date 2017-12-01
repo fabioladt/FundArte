@@ -9,7 +9,7 @@
           </div>
             <br>
             <div class="table-responsive">
-                <table class="table table-striped table-hover table-bordered" id="tabla_usuarios">
+                <table class="table table-striped table-hover table-bordered" id="tabla_exposiciones">
                     <thead class="thead-dark">
                         <tr>
                           <th>Nombre</th>
