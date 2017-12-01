@@ -56,10 +56,15 @@ class Auth extends CI_Controller {
 
     public function register()
   {
+    $data = array('titulo' => 'FundArte');
+    $this->load->view("estructura/head", $data);
+    $this->load->view("estructura/nav_crud");
+
     //cargar Vista
     if(isset($_POST['register']))
     {
-      $this->load->view('usuario/head_usuario');
+
+      //$this->load->view('usuario/head_usuario');
       //$this->form_validation->set_rules('id', 'ID', 'required');
       $this->form_validation->set_rules('usuario', 'Username', 'required');
       $this->form_validation->set_rules('contraseña', 'Password', 'required');
@@ -78,7 +83,7 @@ class Auth extends CI_Controller {
     }
 
     $this->load->view('register');
-
+    $this->load->view("estructura/footer");
   }
 
 }
