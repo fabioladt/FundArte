@@ -38,6 +38,30 @@
 
     <script type="text/javascript" src="<?=base_url()?>public/js/jquery.js"></script>
     <link rel="stylesheet" href="<?=base_url()?>public/css/jquery.dataTables.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>}
+
+    <meta name="author" content="TPI115">
+    <meta name="description" content="Organizacion FundArte para el apoyo de actividades de sano esparcimiento en cojutepeque">
+    <meta name="keywords" content="FundArte Cojutepeque tpi">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Open Graph data -->
+    <meta property="org:title" content="[FundArte]" />
+    <meta property="org:type" content="[Cojutepeque]" />
+    <meta property="org:url" content="[https://www.facebook.com/FACojutepeque/" class="fa fa-facebook/]" />
+    <meta property="org:image" content="[]" />
+    <meta property="org:description" content="[FundArte para motivar a la cultura en Cojutepeque]" />
+    <meta property="org:site_name" content="[FundArte, i.e. Moz]" />
+    <meta property="org:app_id" content="[]" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="FundArte" />
+    <meta name="twitter:site" content="[https://twitter.com/fundartecojute" class="fa fa-twitter]" />
+    <meta name="twitter:title" content="[FundArte]" />
+    <meta name="twitter:description" content="[FundArte para motivar a la cultura en Cojutepeque]" />
+    <meta name="twitter:creator" content="[@pruebbbba]" />
+    <!-- Twitter Summary card images must be at least 120x120px -->
+    <meta name="twitter:image" content="[]" />
 
   </head>
