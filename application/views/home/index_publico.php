@@ -59,7 +59,6 @@
   </div>
 </div>
 
-<!-- empresas section -->
 <div id="empresa">
   <div class="container">
     <div class="row">
@@ -82,7 +81,6 @@
   </div>
 </div>
 
-<!-- divider section -->
 <div class="container">
   <div class="row">
     <div class="col-md-1 col-sm-1"></div>

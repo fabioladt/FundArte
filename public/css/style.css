@@ -227,7 +227,7 @@ ul.nav li:hover > .dropdown {
   padding-top: 100px;
 }
 #evento {
-  padding-top: 50px;
+  padding-top: 40px;
 }
 /* home section */
 #home {
@@ -288,7 +288,7 @@ ul.nav li:hover > .dropdown {
 
 /* service section */
 #nosotros {
-  padding-top: 100px;
+  padding-top: 40px;
   padding-bottom: 80px;
 }
 #nosotros h2 {
@@ -329,17 +329,16 @@ ul.nav li:hover > .dropdown {
 
 /* aspirante section */
 #aspirante{
-  text-align: justify;
-  padding-top: 80px;
+  text-align: center;
+  padding-top: 40px;
   padding-bottom: 40px;
   }
 #aspirante h2 {
-  border-right: 2px solid #f2af00;
   display: inline-block;
   padding: 10px 20px 10px 10px;
 }
 #aspirante .col-md-12 {
-  text-align: center;
+  text-align: justify;
   padding-bottom: 10px;
 }
 
